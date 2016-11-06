@@ -1,2 +1,3 @@
 dependencies {
+    compile files("${System.env.JAVA_HOME}/lib/tools.jar")
 }
