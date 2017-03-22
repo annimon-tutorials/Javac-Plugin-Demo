@@ -1,0 +1,18 @@
+compileJava.options.compilerArgs.addAll([
+        '-processorpath',
+        project(':plugin').jar.outputs.files.getFiles()[0],
+        '-Xplugin:MapAccess'
+])
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'com.example.test.mapaccess.Main'
+}
+
+task execute(type:JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+dependencies {
+    compile project(':plugin')
+}
