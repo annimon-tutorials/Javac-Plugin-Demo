@@ -1,0 +1,13 @@
+compileJava.options.compilerArgs.addAll([
+        '-processorpath',
+        project(':plugin').jar.outputs.files.getFiles()[0],
+        '-Xplugin:MethodsCount'
+])
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'com.example.test.methodscount.Main'
+}
+
+dependencies {
+    compile project(':plugin')
+}
