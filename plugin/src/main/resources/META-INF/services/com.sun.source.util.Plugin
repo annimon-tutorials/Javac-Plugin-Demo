@@ -2,3 +2,4 @@ com.example.javacplugin.characterscounter.CharactersCounterPlugin
 com.example.javacplugin.methodscounter.MethodsCounterPlugin
 com.example.javacplugin.mapaccessoperator.MapAccessOperatorPlugin
 com.example.javacplugin.operatoroverloading.OperatorOverloadingPlugin
+com.example.javacplugin.extensionmethods.ExtensionMethodsPlugin
